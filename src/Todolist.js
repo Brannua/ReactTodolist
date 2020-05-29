@@ -4,7 +4,7 @@ import TodoItem from './TodoItem'
 class Todolist extends Component {
   constructor(props) {
     super(props);
-    // 绑作用域
+    // 给函数绑作用域全部在constructor中处理
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDeleteItem = this.handleDeleteItem.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -16,12 +16,12 @@ class Todolist extends Component {
   }
 
   handleInputChange(e) {
-    let val = e.target.value
+    let val = e.target.value;
     this.setState(() => {
       return {
         inputVal: val,
       }
-    })
+    });
   }
 
   handleSubmit() {
@@ -30,7 +30,7 @@ class Todolist extends Component {
         inputVal: '',
         list: [...prevState.list, prevState.inputVal],
       }
-    })
+    });
   }
 
   handleDeleteItem(index) {

@@ -1,5 +1,7 @@
 ## React 学习 demo
 
+- master分支: react + redux 的基础实现版本
+
 - redux + redux-thunk + antd 实现的版本( 含注释 & 笔记 ) 在分支: refactor-AntDesign-Redux-thunk-TodoList
 
   ```git
@@ -10,6 +12,12 @@
 
   ```git
     git checkout refactor-AntDesign-Redux-saga-TodoList
+  ```
+
+- 基于react-redux模块实现的版本( 含注释 & 笔记 ) 在分支: refactor-React-Redux-TodoList
+
+  ```git
+    git checkout refactor-React-Redux-TodoList
   ```
 
 - React 性能优化

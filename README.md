@@ -1,5 +1,11 @@
 ## React 学习 demo
 
+- redux + redux-thunk + antd 实现的版本( 含注释 & 笔记 ) 在分支: refactor-AntDesign-TodoList
+
+  ```git
+    git checkout refactor-AntDesign-TodoList
+  ```
+
 - React 性能优化
 
   - 处理函数中的this指向时，函数绑作用域只在constructor中集中处理一次

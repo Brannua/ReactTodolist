@@ -9,3 +9,5 @@ export const ADD_LIST_ITEM = 'add_list_item';
 export const DELETE_LIST_ITEM = 'delete_list_item';
 
 export const INIT_LIST_ACTION = 'init_list_action';
+
+export const GET_LIST_ACTION = 'get_list_action';

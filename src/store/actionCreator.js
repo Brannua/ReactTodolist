@@ -1,8 +1,7 @@
 /**
  * @desc actionCreator
  */
-import {ADD_LIST_ITEM, CHANGE_INPUT_VALUE, DELETE_LIST_ITEM, INIT_LIST_ACTION} from './actionTypes';
-import axios from 'axios';
+import {ADD_LIST_ITEM, CHANGE_INPUT_VALUE, DELETE_LIST_ITEM, INIT_LIST_ACTION, GET_LIST_ACTION} from './actionTypes';
 
 export function handleInputChangeAction(value) {
   return {
@@ -31,12 +30,8 @@ export function initListAcion(data) {
   }
 }
 
-export function getListActionAsync() {
-  return function (dispatch) {
-    axios.get('/mock/data.json').then(res => {
-      const { data } = res;
-      const action = initListAcion(data);
-      dispatch(action);
-    });
+export function getListAction() {
+  return {
+    type: GET_LIST_ACTION,
   }
 }

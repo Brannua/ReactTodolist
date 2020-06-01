@@ -1,7 +1,7 @@
 /**
  * @desc actionCreator
  */
-import {ADD_LIST_ITEM, CHANGE_INPUT_VALUE, DELETE_LIST_ITEM} from './actionTypes';
+import {ADD_LIST_ITEM, CHANGE_INPUT_VALUE, DELETE_LIST_ITEM, INIT_LIST_ACTION} from './actionTypes';
 
 export function handleInputChangeAction(value) {
   return {
@@ -20,5 +20,12 @@ export function handleDeleteAction(index) {
   return {
     index,
     type: DELETE_LIST_ITEM,
+  }
+}
+
+export function initListAcion(data) {
+  return {
+    data,
+    type: INIT_LIST_ACTION,
   }
 }

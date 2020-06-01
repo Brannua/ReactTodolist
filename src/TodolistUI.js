@@ -23,7 +23,7 @@ function TodolistUI(props) {
         <List
           bordered
           dataSource={ props.list }
-          renderItem={ item => ( <List.Item onClick={ (index) => { props.handleDelete(index) } }>{ item }</List.Item> ) }
+          renderItem={ (item, index) => ( <List.Item onClick={ () => { props.handleDelete(index) } } >{ item }</List.Item> ) }
           style={{ width: '380px', marginLeft: '10px' }}
         ></List>
       </Fragment>
